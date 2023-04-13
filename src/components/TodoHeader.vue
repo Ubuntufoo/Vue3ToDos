@@ -1,17 +1,22 @@
 <script setup>
 import { RouterLink } from 'vue-router';
+import { Icon } from '@iconify/vue';
 </script>
 
 <template>
   <header>
-    <nav class="container-fluid">
+    <nav class="container">
       <div class="branding">
         <img src="../assets/redCheckMark.png" alt="Big Red Check Mark" width="80" height="80">
         <h1>To-Do List</h1>
       </div>
       <ul class="nav-routes">
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/">
+          <Icon icon="material-symbols:home-outline" color="#6be585" width="80" />
+        </RouterLink>
+        <RouterLink to="/about">
+          <Icon icon="mdi:about-variant" color="#6be585" width="80" />
+        </RouterLink>
       </ul>
     </nav>
   </header>
@@ -24,12 +29,13 @@ header {
   nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 25px 200px;
 
     .branding {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
 
       img {
         max-width: 50px;
@@ -42,10 +48,10 @@ header {
 
     .nav-routes {
       display: flex;
-      flex: 1;
       justify-content: flex-end;
-      gap: 12px;
+      gap: 20px;
       list-style: none;
+      padding: 10px;
 
       a {
         text-decoration: none;

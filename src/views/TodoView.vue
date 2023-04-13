@@ -87,7 +87,7 @@ main {
   padding: 40px 16px;
 
   h1 {
-    margin-bottom: 16px;
+    margin: 60px 0px;
     text-align: center;
   }
 

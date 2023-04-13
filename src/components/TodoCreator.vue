@@ -38,7 +38,7 @@ const createTodo = () => {
 .input-wrap {
   display: flex;
   transition: 250ms ease;
-  border: 2px solid #41b080;
+  border: 10px solid #6be585;
 
   &.input-err {
     border-color: red;
@@ -51,7 +51,7 @@ const createTodo = () => {
 
   input {
     width: 100%;
-    padding: 8px 6px;
+    padding: 16px 6px;
     border: none;
 
     &:focus {
