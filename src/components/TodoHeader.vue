@@ -5,17 +5,17 @@ import { Icon } from '@iconify/vue';
 
 <template>
   <header>
-    <nav class="container">
+    <nav class="container-fluid">
       <div class="branding">
         <img src="../assets/redCheckMark.png" alt="Big Red Check Mark" width="80" height="80">
         <h1>To-Do List</h1>
       </div>
       <ul class="nav-routes">
         <RouterLink to="/">
-          <Icon icon="material-symbols:home-outline" color="#6be585" width="80" />
+          <Icon icon="material-symbols:home-outline" width="70" />
         </RouterLink>
         <RouterLink to="/about">
-          <Icon icon="mdi:about-variant" color="#6be585" width="80" />
+          <Icon icon="mdi:about-variant" width="70" />
         </RouterLink>
       </ul>
     </nav>
@@ -33,6 +33,7 @@ header {
     padding: 25px 200px;
 
     .branding {
+      color: #dd3e54;
       display: flex;
       align-items: center;
       gap: 10px;
@@ -42,14 +43,14 @@ header {
       }
 
       h1 {
-        font-size: 24px;
+        font-size: 36px;
       }
     }
 
     .nav-routes {
       display: flex;
       justify-content: flex-end;
-      gap: 20px;
+      gap: 30px;
       list-style: none;
       padding: 10px;
 
